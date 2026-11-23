@@ -49,14 +49,33 @@ bioInput.addEventListener("input", function() {
 
 
 photoInput.addEventListener("change", function() {
-    let file = photoInput.files;
+    let file = photoInput.files[0]; 
+    
     if (file) {
         let reader = new FileReader();
         reader.onload = function(event) {
-            uploadedImageBase64 = event.target.result;
-            previewImg.src = uploadedImageBase64;
-            previewImg.style.display = "block";
-            placeholderText.style.display = "none";
+            let tempImg = new Image();
+            tempImg.onload = function() {
+                
+                let canvas = document.createElement("canvas");
+                let ctx = canvas.getContext("2d");
+                
+                let maxWidth = 500;
+                let scale = maxWidth / tempImg.width;
+                canvas.width = maxWidth;
+                canvas.height = tempImg.height * scale;
+
+                
+                ctx.filter = "grayscale(100%) contrast(115%)";
+                ctx.drawImage(tempImg, 0, 0, canvas.width, canvas.height);
+
+               
+                uploadedImageBase64 = canvas.toDataURL("image/jpeg", 0.85);
+                previewImg.src = uploadedImageBase64;
+                previewImg.style.display = "block";
+                placeholderText.style.display = "none";
+            };
+            tempImg.src = event.target.result;
         };
         reader.readAsDataURL(file);
     }
