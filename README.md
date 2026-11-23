@@ -4,7 +4,7 @@
 
 Проект выполнен на чистом **HTML5, CSS3 и Vanilla JavaScript** без использования сторонних фреймворков и библиотек.
 
-🔗 **[Открыть живую версию проекта (GitHub Pages)]([https://github.io](https://github.com/lenashmigelskaya-collab/character-glossary.git))** 
+🔗 **[Открыть живую версию проекта (GitHub Pages)](https://lenashmigelskaya-collab.github.io/character-glossary/)**
 
 ---
 
@@ -50,6 +50,7 @@
 
 1. Скачай репозиторий или склонируй его:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/lenashmigelskaya-collab/character-glossary
+
    ```
 2. Открой файл `index.html` в любом современном браузере (или запусти через расширение **Live Server** в VS Code).
