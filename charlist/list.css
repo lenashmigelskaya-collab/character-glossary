@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: url('forest.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia', serif;
+    padding: 20px;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-header-scroll {
+    width: 85%;
+    min-height: 135px;
+    background-image: url('scrollhead.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 45px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.9));
+    z-index: 2;
+}
+
+.menu-header-scroll h1 {
+    font-size: 38px;
+    font-weight: normal;
+    color: #8b1e2f; 
+    letter-spacing: 2px;
+}
+
+.menu-body-scroll {
+    width: 100%;
+    background-image: url('scrolltext.png');
+    background-size: 100% 100%;
+    padding: 75px 75px 70px 85px;
+    margin-top: -20px;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.95));
+}
+
+.characters-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.char-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.char-name {
+    text-decoration: none;
+    color: #6e1423; 
+    font-size: 26px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.char-name:hover {
+    color: #000000;
+    transform: translateX(5px);
+}
+
+
+.toggle-feather {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.toggle-feather img {
+    width: 65px;
+    height: auto;
+    display: block;
+}
+
+.toggle-feather:hover {
+    transform: scale(1.1) rotate(-5deg);
+    filter: invert(16%) sepia(85%) saturate(3500%) hue-rotate(340deg) brightness(85%);
+}
+
+
+.char-item.open .toggle-feather {
+    transform: rotate(18deg);
+    filter: invert(16%) sepia(85%) saturate(3500%) hue-rotate(340deg) brightness(85%);
+}
+
+
+.char-details {
+    display: none;
+    padding-left: 15px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.45;
+    animation: slideDown 0.3s ease;
+}
+
+
+.char-item.open .char-details {
+    display: block;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-wrapper {
+    margin-top: 30px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.back-link:hover {
+    color: #8b1e2f;
+}
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pag-btn {
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #f0e6e8;
+    border: 1px solid #4a151e;
+    padding: 4px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.pag-btn:hover:not(:disabled) {
+    background-color: #8b1e2f;
+}
+
+.pag-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+#list-pag-info {
+    font-size: 15px;
+    font-weight: bold;
+    color: #141414;
+}
+.delete-btn {
+    background: none;
+    border: 1px solid transparent;
+    color: #6e1423;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 6px;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    color: #ffffff;
+    background-color: #8b1e2f;
+    transform: scale(1.1);
+}
+.edit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #6e1423;
+    font-size: 18px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.edit-btn:hover {
+    color: #ffffff;
+    background-color: #6e1423;
+    transform: scale(1.1);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div class="menu-container">
+        
+        <div class="menu-header-scroll">
+            <h1>ПОИСК В ГЛОССАРИИ</h1>
+        </div>
+
+       
+        <div class="menu-body-scroll">
+            
+            
+            <div class="search-box">
+                <input type="text" id="search-input" style="color: aliceblue;" placeholder="Введите имя персонажа (например, Ви или Киран)...">
+            </div>
+
+            
+            <p id="no-results" class="no-results">Персонаж с таким именем не найден в свитках...</p>
+
+            
+            <ul id="search-list" class="search-list">
+                <li class="search-item">
+                    <a href="../vi/vi.html" class="char-link">
+                        <span class="char-title">Ви (V)</span>
+                        <span class="char-universe">Devil May Cry 5</span>
+                    </a>
+                </li>
+                <li class="search-item">
+                    <a href="../symmetra/symmetra.html" class="char-link">
+                        <span class="char-title">Симметра</span>
+                        <span class="char-universe">Overwatch</span>
+                    </a>
+                </li>
+                <li class="search-item">
+                    <a href="../anton/anton.html" class="char-link">
+                        <span class="char-title">Антон</span>
+                        <span class="char-universe">Зайчик (Tiny Bunny)</span>
+                    </a>
+                </li>
+                <li class="search-item">
+                    <a href="../kieran/kieran.html" class="char-link">
+                        <span class="char-title">Киран</span>
+                        <span class="char-universe">Dragon Age</span>
+                    </a>
+                </li>
+                <li class="search-item">
+                    <a href="../leone/leone.html" class="char-link">
+                        <span class="char-title">Леоне Аббаккио</span>
+                        <span class="char-universe">JoJo's Bizarre Adventure</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="pagination" class="pagination-controls">
+                <button id="pag-prev" class="pag-btn" disabled>◀</button>
+                <span id="pag-info">1 / 1</span>
+                <button id="pag-next" class="pag-btn" disabled>▶</button>
+            </div>
+
+            
+            <div class="back-wrapper">
+                <a href="../index.html" class="back-link">◀ Вернуться в меню</a>
+            </div>
+        </div>
+    </div>
+    <script src="search.js"></script>
+
+</body>
+</html>

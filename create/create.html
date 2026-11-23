@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+     <form id="create-char-form" class="container">
+        
+     
+        <div class="left-scroll">
+            <div class="scroll-content">
+                <h2>Новое досье</h2>
+                
+                <div class="form-group">
+                    <label for="char-name">Имя персонажа:</label>
+                    <input type="text" id="char-name" required placeholder="Например: Данте">
+                </div>
+
+                <div class="form-group">
+                    <label for="char-status">Статус:</label>
+                    <input type="text" id="char-status" required placeholder="Например: Охотник на демонов">
+                </div>
+
+                <div class="form-group">
+                    <label for="char-universe">Вселенная:</label>
+                    <input type="text" id="char-universe" required placeholder="Например: Devil May Cry">
+                </div>
+
+                <div class="form-group">
+                    <label for="char-abilities">Способности и оружие:</label>
+                    <input type="text" id="char-abilities" required placeholder="Например: Мятежник, Эбони и Айвори">
+                </div>
+
+                <div class="form-group">
+                    <label for="char-bio">
+                        Биография / Цитата: 
+                        <span id="char-counter" class="counter">0 / 350</span>
+                    </label>
+                    
+                    <textarea id="char-bio" rows="5" required placeholder="Введите описание или цитату (максимум 350 символов)..."></textarea>
+                </div>
+            </div>
+
+            <div class="scroll-controls">
+                <a href="../index.html" class="back-link">◀ В меню</a>
+                <button type="submit" class="save-btn">Записать в свиток ✒️</button>
+            </div>
+        </div>
+
+        
+        <div class="right-column">
+            <header class="header-scroll">
+                <h1 class="main-title">БАЗА ДАННЫХ ПЕРСОНАЖЕЙ</h1>
+                <p class="datacharachter">СОЗДАНИЕ НОВОГО ДОСЬЕ</p>
+            </header>
+
+            
+            <div class="portrait-upload-box">
+                <div class="portrait-frame" id="preview-box">
+                    <img id="preview-img" src="" alt="Предпросмотр" style="display: none;">
+                    <span id="upload-placeholder">Портрет не выбран</span>
+                </div>
+                
+                
+                <label for="char-photo" class="upload-label">Загрузить изображение</label>
+                <input type="file" id="char-photo" accept="image/*" required>
+            </div>
+        </div>
+
+    </form>
+<script src="create.js"></script>
+</body>
+</html>

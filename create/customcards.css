@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: url('forest.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 35px;
+}
+
+
+.left-scroll {
+    flex: 1;
+    background-image: url('scrolltext.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    padding: 85px 55px 85px 45px;
+    color: #141414;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.9));
+}
+
+.scroll-content h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.scroll-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.block-gap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.right-column {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.header-scroll {
+    width: 100%;
+    background-image: url('scrollhead.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 35px 45px;
+    text-align: center;
+    color: #111111;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.9));
+}
+
+.main-title {
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.datacharachter {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222222;
+}
+
+
+.portrait-frame {
+    width: 390px;
+    border: 2px solid #2e2e2e;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.95), inset 0 0 20px rgba(0, 0, 0, 0.8);
+    background-color: #000000;
+}
+
+.portrait-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%) contrast(115%);
+}
+
+
+.text-page {
+    display: none;
+}
+
+
+.text-page.active {
+    display: block;
+    animation: fadeInPage 0.45s ease;
+}
+
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.feather-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.feather-btn img {
+    width: 65px; 
+    height: auto;
+    display: block;
+}
+
+
+.prev-feather img {
+    transform: scaleX(-1);
+}
+
+
+.feather-btn:hover:not(:disabled) {
+    transform: scale(1.1);
+    filter: invert(16%) sepia(85%) saturate(3500%) hue-rotate(340deg) brightness(85%);
+}
+
+
+.feather-btn:disabled {
+    opacity: 0.25;
+    cursor: default;
+}
+css
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.download-btn {
+    background-color: #6e1423;
+    color: #ffffff;
+    border: 1px solid #2b060c;
+    padding: 8px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #8b1e2f;
+    transform: scale(1.03);
+}

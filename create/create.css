@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: url('forest.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 35px;
+}
+
+
+.left-scroll {
+    flex: 1;
+    background-image: url('scrolltext.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 60px 65px 65px;
+    color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.9));
+}
+
+.scroll-content h2 {
+    font-size: 24px;
+    color: #8b1e2f;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b1d19;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    font-weight: normal;
+    color: #6e1423;
+    font-size: 13px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(110, 20, 35, 0.4);
+    border-bottom: 2px solid #6e1423;
+    padding: 7px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #111111;
+    border-radius: 3px;
+    outline: none;
+    resize: none; 
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: rgba(139, 30, 47, 0.1);
+}
+
+
+.scroll-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.back-link:hover {
+    color: #8b1e2f;
+}
+
+.save-btn {
+    background-color: #6e1423;
+    color: #ffffff;
+    border: 1px solid #2b060c;
+    padding: 8px 18px;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.save-btn:hover {
+    background-color: #8b1e2f;
+    transform: scale(1.03);
+}
+
+
+.right-column {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-scroll {
+    width: 100%;
+    min-height: 130px;
+    background-image: url('scrollhead.png');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.9));
+}
+
+.main-title {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.datacharachter {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8b1e2f;
+}
+
+
+.portrait-upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.portrait-frame {
+    width: 360px;
+    height: 360px; 
+    border: 2px solid #4a151e;
+    background-color: rgba(15, 15, 18, 0.85);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    filter: grayscale(100%) contrast(115%); 
+}
+
+#upload-placeholder {
+    color: #8c8c96;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+#char-photo {
+    display: none;
+}
+
+.upload-label {
+    background-color: #1c1c21;
+    color: #e2e2e6;
+    border: 1px solid #6e1423;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.upload-label:hover {
+    background-color: #6e1423;
+    color: #ffffff;
+}
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+    filter: grayscale(100%) contrast(115%);
+}

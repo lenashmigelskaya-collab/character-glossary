@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="customcards.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="left-scroll">
+            <div class="scroll-content" id="dynamic-pages-container">
+                
+            </div>
+
+            
+            <div class="scroll-controls">
+                <button id="prev-btn" class="feather-btn prev-feather" disabled title="Назад">
+                    <img src="feather.png" alt="Назад">
+                </button>
+                <span id="page-indicator">1 / 1</span>
+                <button id="next-btn" class="feather-btn next-feather" title="Далее">
+                    <img src="feather.png" alt="Далее">
+                </button>
+            </div>
+        </div>
+
+        
+        <div class="right-column">
+            <header class="header-scroll">
+                <h1 class="main-title">БАЗА ДАННЫХ ПЕРСОНАЖЕЙ</h1>
+                <p class="datacharachter" id="header-subtitle">ДОСЬЕ ПЕРСОНАЖА</p>
+            </header>
+
+            <div class="portrait-frame">
+                <img id="char-portrait" src="" alt="Портрет персонажа">
+            </div>
+
+            <a href="../index.html" class="back-link">◀ Вернуться в глоссарий</a>
+            <div class="card-actions">
+                <button id="download-btn" class="download-btn">Скачать карточку ⬇️</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="customcards.js"></script>
+</body>
+</html>

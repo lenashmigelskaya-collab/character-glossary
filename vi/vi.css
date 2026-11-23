@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: url('forest.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 35px;
+}
+
+
+.left-scroll {
+    flex: 1;
+    background-image: url('scrolltext.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    padding: 85px 55px 85px 45px;
+    color: #141414;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.9));
+}
+
+.scroll-content h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.scroll-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.block-gap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.right-column {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.header-scroll {
+    width: 100%;
+    background-image: url('scrollhead.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 35px 45px;
+    text-align: center;
+    color: #111111;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.9));
+}
+
+.main-title {
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.datacharachter {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222222;
+}
+
+
+.portrait-frame {
+    width: 390px;
+    border: 2px solid #2e2e2e;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.95), inset 0 0 20px rgba(0, 0, 0, 0.8);
+    background-color: #000000;
+}
+
+.portrait-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
