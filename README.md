@@ -4,7 +4,7 @@
 
 Проект выполнен на чистом **HTML5, CSS3 и Vanilla JavaScript** без использования сторонних фреймворков и библиотек.
 
-🔗 **[Открыть живую версию проекта (GitHub Pages)](https://github.io)** 
+🔗 **[Открыть живую версию проекта (GitHub Pages)]([https://github.io](https://github.com/lenashmigelskaya-collab/character-glossary.git))** 
 
 ---
 
